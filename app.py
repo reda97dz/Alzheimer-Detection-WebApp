@@ -37,7 +37,6 @@ def predict():
 
     with graph.as_default():
         print("predicting")
-        # model = tf.keras.models.load_model("model\InceptionResNet-73.h5")
         json_file = open('model\model.json','r')
         model_json = json_file.read()
         json_file.close()
